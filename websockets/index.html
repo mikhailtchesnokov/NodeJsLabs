@@ -1,0 +1,14 @@
+<!DOCTYPE html> 
+<html>
+     <head>
+        <script src="/socket.io/socket.io.js"></script>
+        <script> 
+            const socket = io(); 
+            socket.emit('hello-message', {myData: 'Hello from client'})
+            socket.on('hello-server', function(data) { console.log(data) })
+        </script> 
+     </head> 
+     <body> 
+        <h1>Hello World</h1>         
+    </body> 
+</html>
