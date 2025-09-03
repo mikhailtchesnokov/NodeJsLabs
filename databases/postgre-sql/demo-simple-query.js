@@ -1,5 +1,4 @@
 const {Client} = require('pg')
-const { text } = require('stream/consumers')
 const connectionString = "postgres://postgres:postgres@localhost:5432/users"
 
 var client = new Client({
