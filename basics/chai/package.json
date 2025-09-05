@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chai": "^6.0.1"
+  },
+  "scripts": {
+    "test": "mocha *-tests.js"
+  }
+}
