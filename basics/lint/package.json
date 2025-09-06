@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "eslint": "^8.x",
+    "gulp": "^4.0.2",
+    "gulp-eslint-new": "^1.0.0"
+  }
+}
