@@ -1,11 +1,9 @@
-const http = require('http');
+const {createServer} = require('http');
 
-const server = http.createServer((request, response) => {
-  response.statusCode = 200;
-  response.setHeader('Content-Type', 'text/plain');
-
-  //console.log(request);
-
+const server = createServer((request, response) => {
+  response.writeHead(200, {'Content-Type': 'text/plain'});
+  response.setHeader('X-Custom-Header', 'MyHeaderValue');
+  
   if(request.url === '/about') {
     response.end('About Us\n');
   } else {

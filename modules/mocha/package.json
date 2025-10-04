@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "mocha index.test.js",
+    "asynctest": "mocha index.async.test.js"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.3",
+    "request": "^2.88.2"
+  }
+}

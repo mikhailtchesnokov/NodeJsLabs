@@ -1,6 +1,10 @@
-var greeter = require('./greeter');
-console.log(greeter().getMilliseconds());
+var greeter = require('colors');
 
 
-var greeter1 = require('./greeter');
-console.log(greeter1().getMilliseconds());
+
+const colors = require('colors');
+const chosenColor = colors.getRandomColor();
+console.log(`You should use ${chosenColor.name} on your website`);
+
+const favoriteColor = colors.getBlue();
+console.log(`My favorite color is ${favoriteColor.name}/${favoriteColor.code}`);
