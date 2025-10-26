@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.use('/hello', helloRouter);
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Express+TypeScript Server is running!');
+    res.send('Hi from default route!');
 });
 
 app.listen(port, () => {

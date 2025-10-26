@@ -8,7 +8,7 @@ router.get('/', (req: Request, res: Response) => {
 
 router.get('/:name', (req: Request, res: Response) => {
     const { name } = req.params;
-    res.json({ message: `Hello, ${name}!` });
+    res.json({ message: `Hello rom /hello route with ${name}!` });
 });
 
 export default router;
